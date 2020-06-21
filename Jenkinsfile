@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
 
     triggers {
@@ -75,4 +75,13 @@ pipeline {
 
 def gradlew(String... args) {
     sh "./gradlew ${args.join(' ')} -s"
+}
+*/
+
+pipeline{
+    agent { 
+        node{
+            echo "stuff"
+            }
+    }
 }
